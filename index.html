@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Love Pets Adoption</title>
 
     <!-- Google Fonts -->
@@ -135,6 +135,22 @@
             color: white;
             font-weight: 600;
         }
+
+        /* --- NEW PHOTO GALLERY CSS --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 
@@ -178,10 +194,18 @@
         </ul>
     </section>
 
-    <!-- Gallery -->
+    <!-- NEW GALLERY SECTION -->
     <section id="gallery">
         <h2>Photo Gallery</h2>
-        <img src="pets.jpg" alt="Adoptable pet photo">
+
+        <div class="gallery-grid">
+            <img src="pets1.jpg" alt="Pet 1">
+            <img src="pets2.jpg" alt="Pet 2">
+            <img src="pets3.jpg" alt="Pet 3">
+            <img src="pets4.jpg" alt="Pet 4">
+            <img src="pets5.jpg" alt="Pet 5">
+        </div>
+
         <p>These adorable pets are waiting for a loving family like yours!</p>
     </section>
 
