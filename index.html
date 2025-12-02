@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta-name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sunrise Website</title>
+    <title>My Love Pets Adoption</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-    <!-- Internal CSS -->
     <style>
-        /* Sunrise Color Palette */
+        /* Sunrise Colors */
         :root {
             --sunrise-top: #FFB56B;
             --sunrise-mid: #FF7E5F;
             --sunrise-bottom: #FEB47B;
             --soft-text: #553E2E;
             --dark-text: #2D1E12;
-            --light-bg: #FFF6EA;
+            --light-bg: #FFF8EE;
         }
 
         body {
@@ -30,16 +29,17 @@
 
         /* Header */
         header {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.75);
+            padding: 1.8rem;
             text-align: center;
             position: relative;
         }
 
         header h1 {
             font-family: "Playfair Display", serif;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin: 0;
+            color: var(--soft-text);
         }
 
         /* Logo Corner */
@@ -50,17 +50,17 @@
         }
 
         .logo-corner img {
-            width: 70px;
+            width: 80px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 12px;
             border: 2px solid white;
         }
 
         /* Navigation */
         nav {
             background: rgba(255, 255, 255, 0.6);
-            padding: 0.5rem 0;
-            backdrop-filter: blur(4px);
+            padding: 0.6rem 0;
+            backdrop-filter: blur(5px);
         }
 
         nav ul {
@@ -82,7 +82,6 @@
             color: white;
         }
 
-        /* Sections */
         section {
             background: var(--light-bg);
             margin: 2rem auto;
@@ -100,10 +99,9 @@
 
         p {
             line-height: 1.7;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
         }
 
-        /* Images */
         img {
             display: block;
             max-width: 300px;
@@ -112,7 +110,6 @@
             box-shadow: 0 3px 8px rgba(0,0,0,0.15);
         }
 
-        /* Table */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -132,7 +129,6 @@
             text-align: center;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 1rem;
@@ -144,90 +140,82 @@
 
 <body>
 
-    <!-- Header + Logo in corner -->
+    <!-- Header with Logo -->
     <header>
         <div class="logo-corner">
-            <img src="https://via.placeholder.com/70" alt="Your Logo">
+            <!-- Replace this with your real logo -->
+            <img src="https://via.placeholder.com/80?text=Logo" alt="My Love Pets Adoption Logo">
         </div>
-        <h1>Welcome to My Sunrise Website</h1>
+        <h1>My Love Pets Adoption</h1>
     </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#table">Table</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pets">Pets Available</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#table">Adoption Schedule</a></li>
         </ul>
     </nav>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About This Site</h2>
+        <h2>Welcome to My Love Pets Adoption</h2>
         <p>
-            This is my prototype site with improved fonts, sunrise colors, and a dedicated logo corner.
-            The design focuses on warmth, clarity, and gentle gradients inspired by early morning light.
+            We help lovable cats, dogs, and small pets find their forever homes.
+            Our mission is to bring joy, love, and companionship into families' lives 
+            while giving animals a second chance in a safe, caring environment.
         </p>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Site Features</h2>
-        <h3>Unordered List</h3>
+    <!-- Pets Available -->
+    <section id="pets">
+        <h2>Pets Waiting for Adoption</h2>
         <ul>
-            <li>Sunrise color theme</li>
-            <li>Modern typography</li>
-            <li>Logo positioned in corner</li>
-            <li>Responsive layout</li>
+            <li><strong>Bella</strong> – Sweet and calm golden retriever 🐶</li>
+            <li><strong>Milo</strong> – Playful young tabby cat 🐱</li>
+            <li><strong>Luna</strong> – Friendly rabbit who loves carrots 🐰</li>
         </ul>
-
-        <h3>Ordered List</h3>
-        <ol>
-            <li>Plan content</li>
-            <li>Design layout</li>
-            <li>Build with HTML/CSS</li>
-            <li>Test & improve</li>
-        </ol>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery -->
     <section id="gallery">
-        <h2>Example Image</h2>
-        <img src="https://via.placeholder.com/300" alt="Sample image">
-        <p>This example shows how images display against the sunrise theme.</p>
+        <h2>Photo Gallery</h2>
+        <img src="https://via.placeholder.com/300" alt="Adoptable pet photo">
+        <p>These adorable pets are waiting for a loving family like yours!</p>
     </section>
 
-    <!-- Table Section -->
+    <!-- Adoption Schedule Table -->
     <section id="table">
-        <h2>Sample Table</h2>
+        <h2>Adoption Events & Schedule</h2>
         <table>
             <tr>
                 <th>Day</th>
-                <th>Task</th>
-                <th>Status</th>
+                <th>Event</th>
+                <th>Time</th>
             </tr>
             <tr>
-                <td>Monday</td>
-                <td>Start Structure</td>
-                <td>Done</td>
+                <td>Saturday</td>
+                <td>Pet Meet & Greet</td>
+                <td>10am – 3pm</td>
             </tr>
             <tr>
-                <td>Tuesday</td>
-                <td>Add Styling</td>
-                <td>Ongoing</td>
+                <td>Sunday</td>
+                <td>Adoption Paperwork</td>
+                <td>12pm – 4pm</td>
             </tr>
             <tr>
                 <td>Wednesday</td>
-                <td>Finish Features</td>
-                <td>Pending</td>
+                <td>Volunteer Training</td>
+                <td>4pm – 6pm</td>
             </tr>
         </table>
     </section>
 
     <!-- Footer -->
     <footer>
-        © 2025 Sunrise-Themed Website
+        © 2025 My Love Pets Adoption — Helping Pets Find Their Forever Homes 🐾
     </footer>
 
 </body>
