@@ -2,24 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Prototype Website</title>
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sunrise Website</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
     <!-- Internal CSS -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+        /* Sunrise Color Palette */
+        :root {
+            --sunrise-top: #FFB56B;
+            --sunrise-mid: #FF7E5F;
+            --sunrise-bottom: #FEB47B;
+            --soft-text: #553E2E;
+            --dark-text: #2D1E12;
+            --light-bg: #FFF6EA;
         }
 
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, var(--sunrise-top), var(--sunrise-mid), var(--sunrise-bottom));
+            margin: 0;
+            padding: 0;
+            color: var(--dark-text);
+        }
+
+        /* Header */
         header {
-            background: #333;
-            color: #fff;
+            background: rgba(255, 255, 255, 0.7);
             padding: 1.5rem;
             text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Logo Corner */
+        .logo-corner {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .logo-corner img {
+            width: 70px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 0.5rem 0;
+            backdrop-filter: blur(4px);
         }
 
         nav ul {
@@ -28,41 +69,62 @@
             justify-content: center;
             gap: 2rem;
             padding: 0;
-            margin: 1rem 0;
+            margin: 0;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            color: var(--dark-text);
+            font-weight: 600;
         }
 
         nav ul li a:hover {
-            color: #0077cc;
+            color: white;
         }
 
-        h1, h2, h3 {
-            color: #333;
+        /* Sections */
+        section {
+            background: var(--light-bg);
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 85%;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            color: var(--soft-text);
         }
 
         p {
-            color: #555;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
 
+        /* Images */
         img {
             display: block;
             max-width: 300px;
             margin: 1rem auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
         }
 
+        /* Table */
         table {
-            width: 80%;
-            margin: 2rem auto;
+            width: 100%;
             border-collapse: collapse;
+            margin-top: 1.5rem;
         }
 
         table, th, td {
-            border: 1px solid #333;
+            border: 1px solid #A77456;
+        }
+
+        th {
+            background: #FFD4AA;
         }
 
         th, td {
@@ -70,20 +132,24 @@
             text-align: center;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 1rem;
-            margin-top: 2rem;
-            background: #eee;
+            color: white;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Header + Logo in corner -->
     <header>
-        <h1>Welcome to My Website</h1>
+        <div class="logo-corner">
+            <img src="https://via.placeholder.com/70" alt="Your Logo">
+        </div>
+        <h1>Welcome to My Sunrise Website</h1>
     </header>
 
     <!-- Navigation -->
@@ -92,7 +158,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#table">Data Table</a></li>
+            <li><a href="#table">Table</a></li>
         </ul>
     </nav>
 
@@ -100,42 +166,41 @@
     <section id="about">
         <h2>About This Site</h2>
         <p>
-            This is my prototype website created during Stage 4 of my project. 
-            It includes headings, paragraphs, images, lists, navigation links, and internal CSS.
+            This is my prototype site with improved fonts, sunrise colors, and a dedicated logo corner.
+            The design focuses on warmth, clarity, and gentle gradients inspired by early morning light.
         </p>
     </section>
 
     <!-- Features Section -->
     <section id="features">
         <h2>Site Features</h2>
-
         <h3>Unordered List</h3>
         <ul>
-            <li>Clean layout</li>
-            <li>Accessible HTML</li>
-            <li>Internal navigation</li>
-            <li>Responsive design</li>
+            <li>Sunrise color theme</li>
+            <li>Modern typography</li>
+            <li>Logo positioned in corner</li>
+            <li>Responsive layout</li>
         </ul>
 
         <h3>Ordered List</h3>
         <ol>
-            <li>Create HTML structure</li>
-            <li>Add content and images</li>
-            <li>Style using CSS</li>
-            <li>Test in browser</li>
+            <li>Plan content</li>
+            <li>Design layout</li>
+            <li>Build with HTML/CSS</li>
+            <li>Test & improve</li>
         </ol>
     </section>
 
-    <!-- Image Gallery -->
+    <!-- Gallery Section -->
     <section id="gallery">
-        <h2>Image Example</h2>
-        <img src="https://via.placeholder.com/300" alt="Placeholder example image">
-        <p>This is an example of an accessible image with alt text.</p>
+        <h2>Example Image</h2>
+        <img src="https://via.placeholder.com/300" alt="Sample image">
+        <p>This example shows how images display against the sunrise theme.</p>
     </section>
 
     <!-- Table Section -->
     <section id="table">
-        <h2>Sample Data Table</h2>
+        <h2>Sample Table</h2>
         <table>
             <tr>
                 <th>Day</th>
@@ -144,17 +209,17 @@
             </tr>
             <tr>
                 <td>Monday</td>
-                <td>Create HTML structure</td>
-                <td>Complete</td>
+                <td>Start Structure</td>
+                <td>Done</td>
             </tr>
             <tr>
                 <td>Tuesday</td>
-                <td>Add images & lists</td>
-                <td>In Progress</td>
+                <td>Add Styling</td>
+                <td>Ongoing</td>
             </tr>
             <tr>
                 <td>Wednesday</td>
-                <td>Internal CSS</td>
+                <td>Finish Features</td>
                 <td>Pending</td>
             </tr>
         </table>
@@ -162,9 +227,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 My Prototype Website</p>
+        © 2025 Sunrise-Themed Website
     </footer>
 
 </body>
 </html>
-
